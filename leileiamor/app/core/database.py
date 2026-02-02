@@ -13,8 +13,7 @@ from sqlalchemy.orm import sessionmaker
 # PostgreSQL: "postgresql://usuario:senha@localhost:5432/nome_do_banco"
 # MySQL: "mysql+pymysql://usuario:senha@localhost:3306/nome_do_banco"
 # SQLite: "sqlite:///./banco.db"
-DATABASE_URL = "postgresql://postgres:1234@localhost:5432/leloca"
-
+DATABASE_URL = "postgresql://postgres:kpdn2008@localhost:5432/Dream_Lin"
 # Chave secreta para geração de tokens JWT (ALTERE PARA UM VALOR SEGURO!)
 # Pode ter até 64 caracteres
 SECRET_KEY = "1234"
@@ -44,4 +43,5 @@ def get_db():
     try:
         yield db
     finally:
+
         db.close()
